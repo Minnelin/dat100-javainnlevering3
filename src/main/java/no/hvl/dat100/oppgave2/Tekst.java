@@ -12,24 +12,37 @@ public class Tekst extends Innlegg {
 	}
 	
 	public Tekst(int id, String bruker, String dato, String tekst) {
+		this.id = id;
+		this.bruker = bruker;
+		this.dato = dato;
+		this.tekst = tekst;
+
 		throw new UnsupportedOperationException(TODO.constructor("Tekst"));
 	}
 	
 	public Tekst(int id, String bruker, String dato, int likes, String tekst) {
+		this.id = id;
+		this.bruker = bruker;
+		this.dato = dato;
+		this.likes = likes;
+		this.tekst = tekst;
 		throw new UnsupportedOperationException(TODO.constructor("Tekst"));
 	}
 	
 	public String getTekst() {
+		return tekst;
 		throw new UnsupportedOperationException(TODO.method());
 
 	}
 
 	public void setTekst(String tekst) {
+		this.tekst = tekst;
 		throw new UnsupportedOperationException(TODO.method());
 	}
 
 	@Override
 	public String toString() {
+		return "Tekst" + id + "\n" + bruker + "\n" + dato + "\n" + likes + "\n" + tekst + "\n";
 		throw new UnsupportedOperationException(TODO.method());
 
 	}
